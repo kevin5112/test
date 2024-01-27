@@ -25,3 +25,11 @@ using `git push --force` is *VERY DANGEROUS* and should only be used if develope
 # --force-with-lease
 `git push --force-with-lease` is an alternative to force that companies will use to atleast have a failsafe for if someone accidentally does a force push.  It's like a force push lite.
 
+# reset
+there are a few resets with git.  `git reset --soft` will soft reset your commit but the files will still be changed and in the staging state.
+
+`git reset` I believe is normalized so it would reset your commit to before staging but will stil have the changes
+
+`git reset --hard` will completely revert your local repo to right after pushing the previous commit.  Meaning it'll erase all new changes to the repo.
+
+git reset will only affect local repos and won't affect your remote repos on github
